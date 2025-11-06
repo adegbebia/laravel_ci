@@ -28,6 +28,5 @@ jobs:
 
             #5- Poussé l'image sur la registry
             - name: poussé image
-              uses: docker push traore1480/laravelcicd:latest 
+              run: docker push traore1480/laravelcicd:latest 
 
-              
