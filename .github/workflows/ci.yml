@@ -25,3 +25,7 @@ jobs:
               with:
                 username: ${{secrets.DOCKER_USERNAME}}
                 password: ${{secrets.DOCKER_TOKEN}}
+
+            #5- Poussé l'image sur la registry
+            - name: poussé image
+              uses: docker push traore1480/laravelcicd:latest
