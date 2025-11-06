@@ -16,3 +16,6 @@ jobs:
             #2- Exécuter les testes
             - name: Run test
               run: cd app &&  composer install && cp .env.example  .env && php artisan key:gen && php artisan test
+            #3- Construire l'image
+            - name: build app image
+              run: docker build -t traore1480/laravelcicd:latest .
