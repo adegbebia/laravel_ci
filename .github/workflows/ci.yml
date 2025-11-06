@@ -15,4 +15,4 @@ jobs:
             
             #2- Exécuter les testes
             - name: Run test
-              run: cd app && php artisan test
+              run: cd app &&  composer install && php artisan test
